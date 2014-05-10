@@ -15,3 +15,12 @@ do {
 	echo $b . PHP_EOL;
 	$b = $b - 5;
 } while ($b >= -10);
+
+echo PHP_EOL;
+
+$c = 2;
+
+do {
+	echo $c . PHP_EOL;
+	$c *= $c;
+} while ($c <= 1000000);
