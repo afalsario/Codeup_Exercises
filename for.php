@@ -35,8 +35,9 @@ if (($incr != TRUE) || !(is_numeric($incr))) {
 	$incr = 1;
 }
 
+echo "Here we go!\n";
 
-for($i = $start; $i <= $end; $i += $incr){
+for($i = $start; $i <= $end; $i += $incr) {
 	echo "$i\n";
 }
 
