@@ -8,8 +8,8 @@ for ($i=0; $i <= 100 ; $i++) {
 }
 
 for ($i=0; $i <= 100 ; $i++) { 
-	if ($i < 10) {
-		echo $i . PHP_EOL;
+	echo $i . PHP_EOL;
+	if ($i >= 10) {
 		break;
 	}
 }
