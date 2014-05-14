@@ -30,11 +30,21 @@ foreach ($books as $book => $info) {
 echo "\nBooks that were published after 1950:\n";
 
 foreach ($books as $book => $info) {
-    if ($info['published'] > 1950) {
+    if ((isset($info['published'])) && ($info['published'] > 1950)) {
         echo $book . PHP_EOL;
     }
 }
 
+echo PHP_EOL;
+
+foreach ($books as $book => $properties) {
+    echo '******' . PHP_EOL; 
+    echo $book . PHP_EOL;
+    echo '------' . PHP_EOL;
+    foreach ($properties as $property => $value) {
+            echo "{$property}: {$value}\n";
+    }
+}
 
 
 
