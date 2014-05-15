@@ -34,13 +34,12 @@ function multiply($a, $b) {
 multiply(14, 2);
 
 function divide($a, $b) {
-	if ($b == 0) {
-		$b = 2;
-		echo "You cannot divide by 0. Default value set to 2.";
-		echo PHP_EOL;
-	}
     if (is_numeric($a) && is_numeric($b)) {
+    	if ($b == 0) {
+    		echo "ERROR: You cannot divide by 0.";
+    	} else {
     	echo $a / $b;
+    	}
    	} else {
 		echo "Both $a and $b must be numbers.";
 	}
