@@ -1,32 +1,36 @@
 <?php
 
-function add($a, $b) {
-    if (is_numeric($a) && is_numeric($b)) {
-    	echo $a + $b;
-	} else {
+function error($a, $b) {
 		echo "Both $a and $b must be numbers.";
 	}
+
+function add($a, $b) {
+	if (is_numeric($a) && is_numeric($b)) {
+    	echo $a + $b;
+    } else {
+    	error($a, $b);
+    }
 	echo PHP_EOL;
 }
 
-add(14, 2);
+add(2, 4);
 
 function subtract($a, $b) {
     if (is_numeric($a) && is_numeric($b)) {
     	echo $a - $b;
 	} else {
-		echo "Both $a and $b must be numbers.";
+		error($a, $b);
 	}
 	echo PHP_EOL;
 }
 
-subtract(14, 2);
+subtract('sdf', 2);
 
 function multiply($a, $b) {
     if (is_numeric($a) && is_numeric($b)) {
     	echo $a * $b;
 	} else {
-		echo "Both $a and $b must be numbers.";
+		error($a, $b);
 	}
 	echo PHP_EOL;
 }
@@ -41,7 +45,7 @@ function divide($a, $b) {
     	echo $a / $b;
     	}
    	} else {
-		echo "Both $a and $b must be numbers.";
+		error($a, $b);
 	}
 	echo PHP_EOL;
 }
@@ -52,7 +56,7 @@ function modulus($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
     	echo $a % $b;
 	} else {
-		echo "Both $a and $b must be numbers.";
+		error($a, $b);
 	}
 	echo PHP_EOL;
 }
