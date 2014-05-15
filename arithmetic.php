@@ -2,57 +2,62 @@
 
 function add($a, $b) {
     if (is_numeric($a) && is_numeric($b)) {
-    	echo $a + $b . PHP_EOL;
+    	echo $a + $b;
 	} else {
 		echo "Both $a and $b must be numbers.";
 	}
 	echo PHP_EOL;
 }
 
-add('sdf', 2);
+add(14, 2);
 
 function subtract($a, $b) {
     if (is_numeric($a) && is_numeric($b)) {
-    	echo $a - $b . PHP_EOL;
+    	echo $a - $b;
 	} else {
 		echo "Both $a and $b must be numbers.";
 	}
 	echo PHP_EOL;
 }
 
-subtract('sdf', 2);
+subtract(14, 2);
 
 function multiply($a, $b) {
     if (is_numeric($a) && is_numeric($b)) {
-    	echo $a * $b . PHP_EOL;
+    	echo $a * $b;
 	} else {
 		echo "Both $a and $b must be numbers.";
 	}
 	echo PHP_EOL;
 }
 
-multiply('sdf', 2);
+multiply(14, 2);
 
 function divide($a, $b) {
+	if ($b == 0) {
+		$b = 2;
+		echo "You cannot divide by 0. Default value set to 2.";
+		echo PHP_EOL;
+	}
     if (is_numeric($a) && is_numeric($b)) {
-    	echo $a / $b . PHP_EOL;
-	} else {
+    	echo $a / $b;
+   	} else {
 		echo "Both $a and $b must be numbers.";
 	}
 	echo PHP_EOL;
 }
 
-divide('sdf', 2);
+divide(14, 0);
 
 function modulus($a, $b) {
 	if (is_numeric($a) && is_numeric($b)) {
-    	echo $a % $b . PHP_EOL;
+    	echo $a % $b;
 	} else {
 		echo "Both $a and $b must be numbers.";
 	}
 	echo PHP_EOL;
 }
 
-modulus('sdf', 2);
+modulus(14, 2);
 
 ?>
