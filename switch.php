@@ -1,7 +1,7 @@
 <?php
 
 // Set the default timezone
-date_default_timezone_set('America/Chicago');
+// date_default_timezone_set('America/Chicago');
 
 // Get Day of Week as number
 // 1 (for Monday) through 7 (for Sunday)
