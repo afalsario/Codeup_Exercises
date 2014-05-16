@@ -30,3 +30,6 @@ $serial = serialize($array);
 echo $serial . PHP_EOL;
 
 // Unserialize the array $array, and output the results
+
+$unserial = unserialize($serial);
+ print_r($unserial) . PHP_EOL;
