@@ -13,7 +13,7 @@ function test($variable_name) {
 		echo "variable is EMPTY\n";
 	}
 }
-unset($nothing);
+
 test($nothing);
 test($something);
 test($array);
