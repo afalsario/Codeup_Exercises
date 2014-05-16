@@ -7,10 +7,10 @@ $array = array(1,2,3);
 // Create a function that checks if a variable is set or empty, and display "$variable_name is SET|EMPTY"
 
 function test($variable_name) {
-	if (isset($variable_name)) {
-		echo "variable is SET\n";
-	} elseif (empty($variable_name)) {
+	if (empty($variable_name)) {
 		echo "variable is EMPTY\n";
+	} elseif (isset($variable_name)) {
+		echo "variable is SET\n";
 	}
 }
 
