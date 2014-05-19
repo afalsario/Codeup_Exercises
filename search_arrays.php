@@ -26,11 +26,12 @@ function array_common_count($array1, $array2)
 
 	foreach($array1 as $array)
 	{
-		if ($array == search($array, $array2)) {
+		if (search($array, $array2))
+		{
 			$count++;
 		}
 	}
-return $count;
+	return $count;
 }
 
 var_dump(array_common_count($names, $compare));
